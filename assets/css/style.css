@@ -6,10 +6,12 @@ body {
 }
 
 .border1 {
-    width: 100vw;;
-    margin: 0;
+    width: 100vw;
+    height: 60vh;
 }
 .logo1 {
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
     max-width: 30%;
     height: auto;
     margin: auto;
