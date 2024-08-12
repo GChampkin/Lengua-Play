@@ -1,17 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Lora:ital,wght@1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     height: 100vh;
     max-width: 1600px;
     background-image: linear-gradient(to right top, #fa570c, #fa6d03, #f98000, #f79208, #f5a217, #f5af21, #f5bb2c, #f5c737, #f7d340, #f9df4a, #faea54, #fbf65f);
     background-size: cover;
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+    color: white;
+
 }
 
-.border1 {
+.homeimage1 {
     width: 100vw;
-    height: 60vh;
+    height: 70vh;
 }
+
 .logo1 {
-    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
-    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
     max-width: 30%;
     height: auto;
     margin: auto;
@@ -19,11 +26,18 @@ body {
     align-items: center;
     justify-content: center;
     position:absolute;
-    top: 0;
+    top: 10%;
     left: 30%;
     right: 30%;
     z-index: 1;
+    filter: drop-shadow(0 0 0.75rem crimson)
 }
+
+.border1 {
+    width: 100vw;
+    height: 70vh;
+}
+
 .logo2 {
     max-width: 20%;
     height: auto;
