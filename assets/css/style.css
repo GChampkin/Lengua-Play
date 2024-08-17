@@ -19,7 +19,7 @@ body {
     color: white;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
 }
 
 .logo1 {
@@ -62,9 +62,9 @@ a {
     text-align: center;
     font-size: xx-large;
     text-shadow: 2px 2px 4px black;
-    color: #061731; 
+    color: #061731;
     text-shadow: -4px 0 white, 0 4px white, 4px 0 white, 0 -4px white;
-    background-image: linear-gradient(to left, rgba(255,255,255,0.7), rgba(255,255,255, 0) 95%);
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 95%);
     display: flex;
     position: absolute;
     justify-content: center;
@@ -116,10 +116,15 @@ p {
     height: 70vh;
 }
 
-.logo2 {
-    max-width: 20%;
-    height: auto;
-    position: left;
-    margin: 10px;
-    padding: 5px;
+.game-div {
+    width: 800px;
+    margin: auto;
+    padding: 10px;
+    color: #061630;
+    font-size: 30px;
+    border: 5px solid white;
+    border-radius: 5px;
+    background-image: linear-gradient(to right top, #fa570c, #fa6d03, #f98000, #f79208, #f5a217, #f5af21, #f5bb2c, #f5c737, #f7d340, #f9df4a, #faea54, #fbf65f);
+    filter: drop-shadow(0 0 0.75rem #061630);
+    text-align: center;
 }
