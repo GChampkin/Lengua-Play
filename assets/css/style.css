@@ -167,7 +167,20 @@ a.image-anchor:hover {
     border-radius: 30px;
 }
 
-a.ser:hover {
+a.ser:hover, button:hover {
     background-color: crimson;
     filter: drop-shadow(0 0 1rem white);
+}
+
+button {
+    width: 200px;
+    font-size: xx-large;
+    color: white;
+    background-color: #061630;
+    filter: drop-shadow(0 0 0.75rem #EE204F);
+    margin: 5px 200px 5px 200px;
+    padding: 5px;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 30px;
 }
