@@ -43,7 +43,7 @@ nav {
     z-index: 1;
 }
 
-nav > a {
+a.nav-anchor {
     width: 200px;
     font-size: xx-large;
     color: white;
@@ -56,7 +56,7 @@ nav > a {
     border-radius: 30px;
 }
 
-a:hover {
+a.nav-anchor:hover {
     background-color: crimson;
     filter: drop-shadow(0 0 1rem white);
 }
@@ -150,6 +150,10 @@ p {
     filter: drop-shadow(0 0 0.75rem #061630);
 }
 
+a.image-anchor:hover {
+    filter: drop-shadow(0 0 1rem white);
+}
+
 .ser {
     width: 200px;
     font-size: xx-large;
@@ -161,4 +165,9 @@ p {
     text-decoration: none;
     border: 1px solid white;
     border-radius: 30px;
+}
+
+a.ser:hover {
+    background-color: crimson;
+    filter: drop-shadow(0 0 1rem white);
 }
