@@ -121,7 +121,7 @@ p {
     height: 70vh;
 }
 
-.game-div {
+.game-div, #learn {
     width: 800px;
     margin: auto;
     padding: 10px;
