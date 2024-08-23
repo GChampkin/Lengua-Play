@@ -121,18 +121,26 @@ p {
     height: 70vh;
 }
 
-.game-div,
-#learn {
-    width: 800px;
+#game {
+    display: flex;
+}
+
+.game-div {
+    width: 80vw;
     margin: auto;
     padding: 10px;
     color: #061630;
-    font-size: 30px;
+    font-size: 24px;
     border: 5px solid white;
     border-radius: 5px;
     background-image: linear-gradient(to right top, #fa570c, #fa6d03, #f98000, #f79208, #f5a217, #f5af21, #f5bb2c, #f5c737, #f7d340, #f9df4a, #faea54, #fbf65f);
     filter: drop-shadow(0 0 0.75rem #061630);
     text-align: center;
+}
+
+hr {
+    width: 20vw;
+    border: 2px solid white;
 }
 
 #game-zone {
@@ -180,7 +188,7 @@ button {
     color: white;
     background-color: #061630;
     filter: drop-shadow(0 0 0.75rem #EE204F);
-    margin: 5px 200px 5px 200px;
+    margin: 5px 200px 10px 200px;
     padding: 5px;
     text-decoration: none;
     border: 1px solid white;
