@@ -230,3 +230,24 @@ button {
     background-image: linear-gradient(to right top, #5a1e2d, #712134, #89253a, #a1283f, #b92b43, #bc2a3f, #bf293b, #c12837, #af212d, #9d1a23, #8b131a, #7a0c11);
     filter: drop-shadow(0 0 0.75rem #EE204F);
 }
+
+#battle-zone {
+    background-color: orange;
+}
+.battle-characters {
+    display: inline-block
+}
+
+.king-ser {
+    width: 30%; 
+    height: auto;
+    margin: auto;
+    float: left;
+}
+
+.king-estar {
+    width: 30%; 
+    height: auto;
+    margin: auto;
+    float: right;
+}
