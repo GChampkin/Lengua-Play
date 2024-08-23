@@ -56,6 +56,19 @@ let randomPhrases = [
 const serConjugations = ["soy", "eres", "es", "somos", "sois", "son"];
 const estarConjugations = ["estoy", "estás", "está", "estamos", "estáis", "están"];
 
-function generatePoints() {
-    
+// function generateFirstPhrase,
+// produces random phrase from array in #random-sentence p section
+
+function generateFirstPhrase() {
+    document.getElementById("random-sentence").innerHtml = {randomPhrases[Math.floor(Math.random()*randomPhrases.length)]};
+    return randomPhrases; 
 }
+
+// function generatePoints: 
+// deciphers if input is correct verb,
+// generates random phrases upon successful user input of verbs,
+// increases ser points if correct,
+// increases estar points if incorrect
+
+// when ser points = 100, produce "you won the battle" message and produce re-play button,
+// if estar points reach 100, produce "you lost the battle" message and provide re-start button
