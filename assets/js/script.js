@@ -60,8 +60,8 @@ const estarConjugations = ["estoy", "estás", "está", "estamos", "estáis", "es
 // produces random phrase from array in #random-sentence p section
 
 function generateFirstPhrase() {
-    document.getElementById("random-sentence").innerHtml = {randomPhrases[Math.floor(Math.random()*randomPhrases.length)]};
-    return randomPhrases; 
+    let phrase = randomPhrases[Math.floor(Math.random() * randomPhrases.length)];
+    document.getElementById("random-sentence").textContent = phrase;
 }
 
 // function generatePoints: 

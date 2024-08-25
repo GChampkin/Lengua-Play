@@ -234,6 +234,7 @@ button {
 #battle-zone {
     background-image: linear-gradient(to right top, #fa570c, #fa6d03, #f98000, #f79208, #f5a217, #f5af21, #f5bb2c, #f5c737, #f7d340, #f9df4a, #faea54, #fbf65f);
 }
+
 .battle-characters {
     display: flex;
     justify-content: space-evenly;
