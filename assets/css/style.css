@@ -177,12 +177,12 @@ a.image-anchor:hover {
 }
 
 a.ser:hover,
-button:hover {
+#game button:hover, .strike-button:hover {
     background-color: crimson;
     filter: drop-shadow(0 0 1rem white);
 }
 
-button {
+#game button {
     width: 200px;
     font-size: xx-large;
     color: white;
@@ -231,21 +231,68 @@ button {
     filter: drop-shadow(0 0 0.75rem #EE204F);
 }
 
+#operand {
+    margin: auto;
+    padding: 5px;
+    border: 1px solid white;
+    background-color: crimson;
+    color: white;
+}
+
+input {
+    height: 30px;
+    width: 200px;
+    margin: auto;
+    border: 1px solid crimson; 
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.strike-button {
+    width: 100px;
+    font-size: x-large;
+    color: white;
+    background-color: #061630;
+    filter: drop-shadow(0 0 0.75rem #EE204F);
+    margin: auto;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 30px;
+}
+
 .score-area {
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    position:relative;
+    left: 26%;
 }
 
 .king-ser {
-    width: 30%; 
+    width: 10%; 
     height: auto;
-    margin-left: 100px;;
-    float: left;
+    margin: 0;
 }
 
 .king-estar {
-    width: 30%; 
+    width: 10%; 
     height: auto;
-    margin-right: 100px;
-    float: right;
+    margin: 0;
+}
+
+.score-area p {
+    margin: 24px 0px 24px 0px;
+    height: 24px;
+    padding: 5px;
+    text-align: center;
+    font-size: x-large;
+    text-shadow: 1px 1px 2px white;
+    color: #061731;
+}
+
+.ser-points {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.7) 95%);
+}
+
+.estar-points {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 95%);
 }

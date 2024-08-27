@@ -66,6 +66,12 @@ const estarConjugations = ["estoy", "estás", "está", "estamos", "estáis", "es
 // when ser points = 100, produce "you won the battle" message and produce re-play button,
 // if estar points reach 100, produce "you lost the battle" message and provide re-start button
 
+//wait for DOM to be loaded before running the game
+
+document.addEventListener("DOMContentLoaded", function() {
+    
+})
+
 function runGame() {
 
 }
@@ -87,5 +93,5 @@ function incrementEstarPoints() {
 }
 
 function displayRandomPhrase() {
-    
+
 }

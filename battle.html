@@ -41,23 +41,30 @@
 
         </section>
 
+        <br>
+
             <div class="game-div">
                 <div id = "random-sentence">
                     <span id = operand>¡Empezamos la batalla!</span>
                 </div>
+
+                <br>
+
                     <input id = "answer" type="text" name = "answer" placeholder = "missing verb">
-                    <button onclick = "generatePoints()">Strike!</button>
-            </div>
 
-            <div class="score-area">
+                    <button class = strike-button onclick = "generatePoints()">Strike!</button>
 
-                <img class="king-ser" src="assets/images/king-ser.png" alt="cartoon character made of blue fire">
+                    <div class="score-area">
 
-                <img class="king-estar" src="assets/images/king-estar.png" alt="cartoon character made of red fire">
+                        <p class="ser-points">King Ser <span id = "correct">0</span></p>
 
-                <p class="ser-points">King Ser <span id = "correct">0</span></p>
-                <p class="estar-points">King Estar <span id = "incorrect">0</span></p>
-
+                        <img class="king-ser" src="assets/images/king-ser.png" alt="cartoon character made of blue fire">
+        
+                        <img class="king-estar" src="assets/images/king-estar.png" alt="cartoon character made of red fire">
+        
+                        <p class="estar-points">King Estar <span id = "incorrect">0</span></p>
+        
+                    </div>
             </div>
 
     </main>
