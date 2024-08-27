@@ -231,10 +231,6 @@ button {
     filter: drop-shadow(0 0 0.75rem #EE204F);
 }
 
-#battle-zone {
-    background-image: linear-gradient(to right top, #fa570c, #fa6d03, #f98000, #f79208, #f5a217, #f5af21, #f5bb2c, #f5c737, #f7d340, #f9df4a, #faea54, #fbf65f);
-}
-
 .score-area {
     display: flex;
     justify-content: space-evenly;
