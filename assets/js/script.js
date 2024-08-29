@@ -1,4 +1,7 @@
-let randomPhrases = [
+const generatePhrase = document.getElementById("battle-button"); // create element to apply an event listener to
+const outputElement = document.getElementById("random-sentence"); // create element for generating random phrase
+
+const randomPhrases = [{
     serPhrases: [
         "Yo soy/estoy alto.", 
         "Tú eres/estás gracioso.", 
@@ -27,6 +30,8 @@ let randomPhrases = [
         "Nosotros somos/estamos una familia",
         "Ellos son/están mis padres."
     ]
+},
+{
     estarPhrases: [
         "La farmácia es/está cerca.",
         "El banco es/está en frente del gimnasio.",
@@ -49,9 +54,15 @@ let randomPhrases = [
         "Hoy, soy/estoy muy contenta.",
         "Mi hermano es/está triste.",
         "Por qué sois/estáis enfedados?",
-        "Los niños son/están emocionantes.",
+        "Los niños son/están emocionantes.",  
     ]
+}
 ];
+generatePhrase.addEventListener("click", displayRandomPhrase)
+function displayRandomPhrase() {
+    const randomIndex = Math.floor(Math.random() * randomPhrases.length);
+    outputElement.textContent = randomPhrases[randomIndex];
+}
 
 const serConjugations = ["soy", "eres", "es", "somos", "sois", "son"];
 const estarConjugations = ["estoy", "estás", "está", "estamos", "estáis", "están"];
@@ -68,9 +79,15 @@ const estarConjugations = ["estoy", "estás", "está", "estamos", "estáis", "es
 
 //wait for DOM to be loaded before running the game
 
-document.addEventListener("DOMContentLoaded", function() {
-    
-})
+// document.addEventListener("DOMContentLoaded", function() {
+//     let buttons = document.getElementsByClassName("button");
+
+//     for (let button of buttons) {
+//         button.addEventListener("click", function () {
+
+//         })
+//     }
+// })
 
 function runGame() {
 

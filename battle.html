@@ -9,7 +9,6 @@
 </head>
 
 <body background="assets/images/lengua-play-main-background.jpeg" alt="image of shooting stars and a spaceship">
-    <main>
         <div>
             <img class="logo1" ; src="assets/images/lengua-play-logo.png" alt="lengua play logo">
         </div>
@@ -29,7 +28,9 @@
 
             <div id="game">
                 <a href="tobe.html"><button>Learn</button></a>
-                <a href="battle.html"><button onclick = "generateFirstPhrase()">Battle!</button></a>
+                <!-- <a href="battle.html"> -->
+                    <button id = battle-button>Battle!</button>
+                <!-- </a> -->
             </div>
 
             <audio src="assets/audio/ser-estar-theme.mp3" controls muted></audio>
@@ -45,7 +46,7 @@
 
             <div class="game-div">
                 <div id = "random-sentence">
-                    <span id = operand>¡Empezamos la batalla!</span>
+                ¡Empezamos la batalla!
                 </div>
 
                 <br>
@@ -66,8 +67,6 @@
         
                     </div>
             </div>
-
-    </main>
 
     <script src="assets/js/script.js"></script>
 </body>
