@@ -177,7 +177,7 @@ a.image-anchor:hover {
 }
 
 a.ser:hover,
-#game button:hover, .strike-button:hover {
+#game button:hover, #strike-button:hover {
     background-color: crimson;
     filter: drop-shadow(0 0 1rem white);
 }
@@ -248,7 +248,7 @@ input {
     font-size: 24px;
 }
 
-.strike-button {
+#strike-button {
     width: 100px;
     font-size: x-large;
     color: white;
