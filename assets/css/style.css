@@ -116,22 +116,6 @@ i:hover {
     color: white;
     width: 90vw;
     margin: auto;
-    display: flex;
-    background-color: crimson;
-    border: 1px solid white;
-    border-radius: 20px;
-    filter: drop-shadow(0 0 0.75rem white);
-}
-
-.author-head {
-    margin: 50px;
-}
-
-.author {
-    font-size: x-large;
-    color: white;
-    width: 90vw;
-    margin: auto;
     background-color: crimson;
     border: 1px solid white;
     border-radius: 20px;
@@ -140,6 +124,32 @@ i:hover {
 
 p {
     margin: 10px;
+}
+
+.contact-us {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: x-large;
+    text-shadow: 2px 2px 4px black;
+    color: #061731;
+    text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 95%);
+}
+
+.contact-section p {
+    text-align: center;
+}
+
+.contact-span {
+    font-size: x-large;
+    color: #061731;
+    width: 400px;
+    margin: auto;
+    background-image: linear-gradient(to right top, #fa570c, #fa6d03, #f98000, #f79208, #f5a217, #f5af21, #f5bb2c, #f5c737, #f7d340, #f9df4a, #faea54, #fbf65f);
+    border: 2px solid white;
+    border-radius: 20px;
+    filter: drop-shadow(0 0 0.75rem white);
 }
 
 .border1 {
@@ -258,8 +268,7 @@ a.ser:hover, #game button:hover, #strike-button:hover, #restart-button:hover {
 
 #audio-player {
     filter: drop-shadow(0 0 1rem white);
-    width: 200px;
-    margin-left: 500px;
+    margin-left: 450px;
 }
 
 #random-sentence {
