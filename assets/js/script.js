@@ -1,9 +1,11 @@
-const generatePhrase = document.getElementById("battle-button"); // create element to apply an event listener to
-const outputElement = document.getElementById("random-sentence"); // create element for generating random phrase
-const strikeButton = document.getElementById("strike-button"); // create element to apply event listener to
-let input = document.querySelector("#answer");
-let serPoints = document.getElementById("correct");
-let estarPoints = document.getElementById("incorrect");
+// const generatePhrase = document.getElementById("battle-button"); // create element to apply an event listener to
+// const outputElement = document.getElementById("random-sentence"); // create element for generating random phrase
+// const strikeButton = document.getElementById("strike-button"); // create element to apply event listener to
+// const input = document.querySelector("#answer");
+// const userInput = input.value.toLowerCase();
+
+// let serPoints = document.getElementById("correct");
+// let estarPoints = document.getElementById("incorrect");
 
 const randomPhrases = [
         {phrase: "Yo soy/estoy alto.", correctAnswer: "soy", incorrectAnswer: "estoy"}, 
@@ -53,39 +55,54 @@ const randomPhrases = [
         {phrase: "Hoy, soy/estoy muy contenta.", correctAnswer: "estoy", incorrectAnswer: "soy"},
         {phrase: "Mi hermano es/está triste.", correctAnswer: "está", incorrectAnswer: "es"},
         {phrase: "Por qué sois/estáis enfedados?", correctAnswer: "estáis", incorrectAnswer: "sois"},
-        {phrase: "Los niños son/están emocionantes.", correctAnswer: "están", incorrectAnswer: "son"}  
-    ];
-let correctValue = null; 
-let incorrectValue = null; 
+        {phrase: "Los niños son/están emocionantes.", correctAnswer: "están", incorrectAnswer: "son"} 
+]
+
 // creates event listener on click of "battle" button
-generatePhrase.addEventListener("click", displayRandomPhrase)
+// generatePhrase.addEventListener("click", displayRandomPhrase)
 
-/**generates random phrase in the html file from phrases array */
-function displayRandomPhrase(event) {
-    event.preventDefault();
-    const randomIndex = Math.floor(Math.random() * randomPhrases.length);
-    outputElement.textContent = randomPhrases[randomIndex].phrase;
-    console.log(randomPhrases[randomIndex]);
-}
+// /**generates random phrase in the html file from phrases array */
+// function displayRandomPhrase(event) {
+//     event.preventDefault();
+//     const randomIndex = Math.floor(Math.random() * randomPhrases.length);
+//     outputElement.textContent = randomPhrases[randomIndex].phrase;
+//     console.log(randomPhrases[randomIndex]);
+// }
 
-strikeButton.addEventListener("click", checkAnswer)
+// strikeButton.addEventListener("click", checkAnswer)
 
+// function checkAnswer(userInput) {
+//     const randomIndex = Math.floor(Math.random() * randomPhrases.length);
+//     const selectedPhrase = randomPhrases[randomIndex].phrase;
+//     let correctValue = selectedPhrase.correctAnswer;
+//     if (userInput === correctValue) {
+//         outputElement.textContent = "muy bien";
+//         console.log('muy bien');
+//     } else {
+//         outputElement.textContent = "inténtalo de nuevo"
+//         console.log('inténtalo de nuevo');
+//     }
+// }
 
 // if user input is equal to correctAnswer; displays correct and generates serPoints
 // if user input is not equal to correctAnswer; displays incorrect and generates estarPoints
-function checkAnswer(event) {
-    event.preventDefault();
-    const randomIndex = Math.floor(Math.random() * randomPhrases.length);
-    correctValue = randomPhrases[randomIndex].correctAnswer;
-    incorrectValue = randomPhrases[randomIndex].incorrectAnswer;
-    if (input.value.toLowerCase() === correctValue) {
-        outputElement.textContent = "Muy bien";
-        console.log("Muy bien")
-    } else if (input.value.toLowerCase() === incorrectValue) {
-        outputElement.textContent = "No es correcto";
-        console.log("no es correcto")
-    }
-}
+// function checkAnswer(event) {
+//     event.preventDefault();
+//     const randomIndex = Math.floor(Math.random() * randomPhrases.length); 
+//     // const correctValue = randomPhrases[randomIndex].correctAnswer;
+//     // const incorrectValue = randomPhrases[randomIndex].incorrectAnswer;
+//     let phrase = randomPhrases[randomIndex].phrase;
+//     if (phrase === serPhrase.phrase + input.value.toLowerCase() === serPhrase.correctAnswer) {
+//         outputElement.textContent = "Muy bien";
+//         console.log("Muy bien")
+//     } if (phrase === estarPhrase.phrase + input.value.toLowerCase() === estarPhrase.correctAnswer){
+//         outputElement.textContent = "Muy bien";
+//         console.log("Muy bien") 
+//     } else {
+//         outputElement.textContent = "No es correcto";
+//         console.log("no es correcto")
+//     }
+// }
 
 // function generatePoints: 
 // deciphers if input is correct verb,
@@ -110,14 +127,45 @@ function checkAnswer(event) {
 
 
 
-function findCorrectAnswer() {
+// function findCorrectAnswer() {
 
+// }
+
+
+
+function getRandomPhrase() {
+    const randomIndex = Math.floor(Math.random() * randomPhrases.length);
+    return randomPhrases[randomIndex];
+}
+
+function displayPhrase() {
+    const selectedPhrase = getRandomPhrase();
+    document.getElementById('phrase').textContent = selectedPhrase.phrase;
+    document.getElementById('phrase').dataset.correctAnswer = selectedPhrase.correctAnswer;
+}
+
+function checkUserAnswer() {
+    const userInput = document.getElementById('userInput').value;
+    const correctAnswer = document.getElementById('phrase').dataset.correctAnswer;
+    const resultDiv = document.getElementById('result');
+    if (userInput === correctAnswer) {
+        resultDiv.textContent = 'muy bien';
+        incrementSerPoints();
+    } else {
+        resultDiv.textContent = `Aiiii, you answered ${userInput}, the correct answer was ${correctAnswer}!`;
+        incrementEstarPoints();
+    }
 }
 
 function incrementSerPoints() {
-
+    let serPoints = parseInt(document.getElementById('correct').innerText);
+    document.getElementById('correct').innerText = ++serPoints 
 }
 
 function incrementEstarPoints() {
-
+    let estarPoints = parseInt(document.getElementById('incorrect').innerText);
+    document.getElementById('incorrect').innerText = ++estarPoints 
 }
+
+// Load a random phrase when the page loads
+window.onload = displayPhrase;
