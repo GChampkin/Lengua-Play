@@ -10,89 +10,92 @@
 </head>
 
 <body background="assets/images/lengua-play-main-background.jpeg" alt="image of shooting stars and a spaceship">
-        <div>
-            <img class="logo1" ; src="assets/images/lengua-play-logo.png" alt="lengua play logo">
+    <div>
+        <img class="logo1" ; src="assets/images/lengua-play-logo.png" alt="lengua play logo">
+    </div>
+
+    <div>
+        <nav>
+            <a class="nav-anchor" href="index.html"><strong>About us</strong></a>
+            <a class="nav-anchor" href="games.html"><strong>Play</strong></a>
+            <a class="nav-anchor" href="index.html"><strong>Contact us</strong></a>
+        </nav>
+    </div>
+
+    <section>
+        <header class="welcome">
+            <h1>Battle!</h1>
+        </header>
+
+        <div id="game">
+            <a href="tobe.html"><button>Learn</button></a>
+            <button id="battle-button">Battle!</button>
         </div>
-
-        <div>
-            <nav>
-                <a class="nav-anchor" href="index.html"><strong>About us</strong></a>
-                <a class="nav-anchor" href="games.html"><strong>Play</strong></a>
-                <a class="nav-anchor" href="#contact"><strong>Contact us</strong></a>
-            </nav>
-        </div>
-
-        <section>
-            <header class="welcome">
-                <h1>Battle!</h1>
-            </header>
-
-            <div id="game">
-                <a href="tobe.html"><button>Learn</button></a>
-                <button id = "battle-button">Battle!</button>
-            </div>
-
-            <div class="game-div">
-                <p>King Ser! King Estar is attacking! Quick! Complete the sentences with the correct conjugation of
-                    "ser" or "estar" to strike your opponent.<br>Strike 20 times to win the battle! </p>
-            </div>
-
-        </section>
 
         <br>
 
-            <div class="game-div">
-                <div>
-                <p id = "phrase"></p>
-                </div>
-
-                <br>
-
-                <input id = "userInput" type="text" name = "answer" placeholder = "missing verb">
-
-                <button id = "strike-button" onclick = "checkUserAnswer()">Strike!</button>
-
-                <button id = "restart-button" onclick = "restartGame()">Re-start</button>
-
-                <div class="score-area">
-
-                    <p class="ser-points">King Ser <span id = "correct">0</span></p>
-
-                    <img class="king-ser" src="assets/images/king-ser.png" alt="cartoon character made of blue fire">
-        
-                    <img class="king-estar" src="assets/images/king-estar.png" alt="cartoon character made of red fire">
-        
-                    <p class="estar-points">King Estar <span id = "incorrect">0</span></p>
-        
-                </div>
-
-                <br>
-
-                <div id = result ></div>
-            </div>
-
-            <br>
-
-        <audio id = "audio-player" src="assets/audio/ser-estar-theme.mp3"repeat title="Play theme music"></audio>
-
-        <div id="playPauseIcon" class="icon">
-            <button id = "audio-button">
-                Play/pause music
-                <i class="fa-duotone fa-solid fa-play"></i>
-                <i class="fa-sharp fa-solid fa-pause"></i>
-             </button>
+        <div class="game-div">
+            <p>King Ser! King Estar is attacking! Quick! Complete the sentences with the correct conjugation of
+                "ser" or "estar" to strike your opponent.<br>Strike 20 times to win the battle! </p>
         </div>
 
-        <footer class = footer>
-            <div class="wrapper">
-                &copy; Lengua Play 2024
-                <div class="icon">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                </div>
+    </section>
+
+<br>
+
+    <audio id="audio-player" src="assets/audio/ser-estar-theme.mp3" repeat title="Play theme music"></audio>
+    
+    <div id="playPauseIcon">
+        <button id="audio-button" class = "icon">
+            <i class="fa-duotone fa-solid fa-play"></i>
+            <i class="fa-sharp fa-solid fa-pause"></i>
+        </button>
+    </div>
+
+    <br>
+
+    <div class="game-div">
+        <div>
+            <p id="phrase"></p>
+        </div>
+
+        <br>
+
+        <input id="userInput" type="text" name="answer" placeholder="missing verb">
+
+        <button id="strike-button" onclick="checkUserAnswer()">Strike!</button>
+
+        <button id="restart-button" onclick="restartGame()">Re-start</button>
+
+        <div class="score-area">
+
+            <p class="ser-points">King Ser <span id="correct">0</span></p>
+
+            <img class="king-ser" src="assets/images/king-ser.png" alt="cartoon character made of blue fire">
+
+            <img class="king-estar" src="assets/images/king-estar.png" alt="cartoon character made of red fire">
+
+            <p class="estar-points">King Estar <span id="incorrect">0</span></p>
+
+        </div>
+
+        <br>
+
+        <div id=result></div>
+    </div>
+
+    <br>
+
+    <footer class=footer>
+        <div class="wrapper">
+            &copy; Lengua Play 2024
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
             </div>
-        </footer>   
+        </div>
+    </footer>
 
     <script src="assets/js/script.js"></script>
 </body>

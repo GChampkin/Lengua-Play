@@ -5,12 +5,12 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100%;
-    min-width: 100%;
+    min-width: 100vw;
 }
 
 body {
-    height: 100%;
-    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
     margin: 0;
     font-family: "Concert One", sans-serif;
     font-weight: 400;
@@ -20,6 +20,7 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
 .logo1 {
@@ -103,7 +104,7 @@ i {
     margin-left: 50px;
 }
 
-i:hover {
+footer i:hover {
     background-color: white;
     border: 1px solid white;
     border-radius: 5px;
@@ -148,8 +149,23 @@ p {
     margin: auto;
     background-image: linear-gradient(to right top, #fa570c, #fa6d03, #f98000, #f79208, #f5a217, #f5af21, #f5bb2c, #f5c737, #f7d340, #f9df4a, #faea54, #fbf65f);
     border: 2px solid white;
-    border-radius: 20px;
+    border-radius: 5px;
     filter: drop-shadow(0 0 0.75rem white);
+}
+
+.contact-span i {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.contact-span a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 4px black;
 }
 
 .border1 {
@@ -212,9 +228,15 @@ a.image-anchor:hover {
     border-radius: 30px;
 }
 
-a.ser:hover, #game button:hover, #strike-button:hover, #restart-button:hover {
+a.ser:hover, #game button:hover, #strike-button:hover, #restart-button:hover, #audio-button:hover {
     background-color: crimson;
     filter: drop-shadow(0 0 1rem white);
+}
+
+#game {
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #game button {
@@ -223,7 +245,6 @@ a.ser:hover, #game button:hover, #strike-button:hover, #restart-button:hover {
     color: white;
     background-color: #061630;
     filter: drop-shadow(0 0 0.75rem #EE204F);
-    margin: 5px 200px 10px 200px;
     padding: 5px;
     text-decoration: none;
     border: 1px solid white;
@@ -266,9 +287,21 @@ a.ser:hover, #game button:hover, #strike-button:hover, #restart-button:hover {
     filter: drop-shadow(0 0 0.75rem #EE204F);
 }
 
-#audio-player {
-    filter: drop-shadow(0 0 1rem white);
-    margin-left: 450px;
+#playPauseIcon {
+    display: flex;
+}
+
+#audio-button {
+    width: 100px;
+    font-size: x-large;
+    color: white;
+    background-color: #061630;
+    filter: drop-shadow(0 0 0.75rem #EE204F);
+    margin: auto;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 30px;
+    justify-self: center;
 }
 
 #random-sentence {
@@ -288,7 +321,7 @@ input {
     font-size: 24px;
 }
 
-#strike-button, #restart-button, #audio-button {
+#strike-button, #restart-button {
     width: 100px;
     font-size: x-large;
     color: white;
