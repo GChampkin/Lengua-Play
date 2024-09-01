@@ -104,5 +104,16 @@ function restartGame() {
     document.getElementById('userInput').value = '';
 }
 
+const audio = document.getElementById('audio-player');
+const playPauseIcon = document.getElementById('playPauseIcon');
+
+playPauseIcon.addEventListener('click', () => {
+    if (audio.paused) {
+    audio.play();
+    } else {
+        audio.pause();
+    }
+});
+
 // Load a random phrase when the page loads
 window.onload = displayPhrase;

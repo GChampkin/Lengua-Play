@@ -144,7 +144,7 @@ p {
 .contact-span {
     font-size: x-large;
     color: #061731;
-    width: 400px;
+    width: 500px;
     margin: auto;
     background-image: linear-gradient(to right top, #fa570c, #fa6d03, #f98000, #f79208, #f5a217, #f5af21, #f5bb2c, #f5c737, #f7d340, #f9df4a, #faea54, #fbf65f);
     border: 2px solid white;
@@ -288,7 +288,7 @@ input {
     font-size: 24px;
 }
 
-#strike-button, #restart-button {
+#strike-button, #restart-button, #audio-button {
     width: 100px;
     font-size: x-large;
     color: white;
