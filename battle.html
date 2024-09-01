@@ -28,12 +28,8 @@
 
             <div id="game">
                 <a href="tobe.html"><button>Learn</button></a>
-                <!-- <a href="battle.html"> -->
-                    <button id = "battle-button">Battle!</button>
-                <!-- </a> -->
+                <button id = "battle-button">Battle!</button>
             </div>
-
-            <audio src="assets/audio/ser-estar-theme.mp3" controls muted></audio>
 
             <div class="game-div">
                 <p>King Ser! King Estar is attacking! Quick! Complete the sentences with the correct conjugation of
@@ -51,27 +47,33 @@
 
                 <br>
 
-                    <input id = "userInput" type="text" name = "answer" placeholder = "missing verb">
+                <input id = "userInput" type="text" name = "answer" placeholder = "missing verb">
 
-                    <button id = "strike-button" onclick = "checkUserAnswer()">Strike!</button>
+                <button id = "strike-button" onclick = "checkUserAnswer()">Strike!</button>
 
-                    <div class="score-area">
+                <button id = "restart-button" onclick = "restartGame()">Re-start</button>
 
-                        <p class="ser-points">King Ser <span id = "correct">0</span></p>
+                <div class="score-area">
 
-                        <img class="king-ser" src="assets/images/king-ser.png" alt="cartoon character made of blue fire">
+                    <p class="ser-points">King Ser <span id = "correct">0</span></p>
+
+                    <img class="king-ser" src="assets/images/king-ser.png" alt="cartoon character made of blue fire">
         
-                        <img class="king-estar" src="assets/images/king-estar.png" alt="cartoon character made of red fire">
+                    <img class="king-estar" src="assets/images/king-estar.png" alt="cartoon character made of red fire">
         
-                        <p class="estar-points">King Estar <span id = "incorrect">0</span></p>
+                    <p class="estar-points">King Estar <span id = "incorrect">0</span></p>
         
-                    </div>
+                </div>
 
-                    <br>
+                <br>
 
-                    <div id = result ></div>
+                <div id = result ></div>
             </div>
 
+            <br>
+            
+        <audio id = "audio-player" src="assets/audio/ser-estar-theme.mp3" controls muted repeat title="play theme music"></audio>
+       
     <script src="assets/js/script.js"></script>
 </body>
 
