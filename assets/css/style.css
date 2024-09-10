@@ -522,4 +522,11 @@ input {
         font-size: 18px;
         width: 250px;
     }
+
+    .score-area {
+        display: flex;
+        align-items: center;
+        position:relative;
+        left: 20%;
+    }
 }
