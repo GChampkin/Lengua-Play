@@ -531,115 +531,47 @@ input {
     }
 }
 
-@media only screen and (max-width: 425px) {
-    html {
-        background-image: linear-gradient(to right top, #fa570c, #fa6d03, #f98000, #f79208, #f5a217, #f5af21, #f5bb2c, #f5c737, #f7d340, #f9df4a, #faea54, #fbf65f);
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 100%;
-        min-width: 100%;
-    }
-    
-    body {
-        max-height: 100%;
-        max-width: 100%;
-        margin: 0;
-        font-family: "Concert One", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: large;
-        color: white;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        overflow-x: hidden;
+@media only screen and (max-width: 426px) {
+    .logo1 {
+        max-width: 25%;
+        filter: drop-shadow(0 0 0.75rem #061630);
+        height: auto;
+        margin: auto;
     }
     
     nav {
-        width: 200px;
-        height: 30px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        top: 10%;
-        right: 0%;
-        bottom: 90%;
-        left: 25%;
-        z-index: 1;
+        width: 80%;
+        height: 40px;
+        margin-top: -50px;
     }
     
     a.nav-anchor {
         width: 15vw;
-        font-size: 16px;
-        color: white;
-        background-color: #061630;
-        filter: drop-shadow(0 0 0.75rem #EE204F);
-        margin: 0 15vw 0 15vw;
-        padding: 5px;
-        text-decoration: none;
-        border: 1px solid white;
-        border-radius: 30px;
+        height: 20px;
+        font-size: 12px;
+        margin: 3vw;
+        line-height: 20px;
     }
 
     .welcome {
         width: 70%;
-        height: 30px;
-        text-align: center;
+        height: 40px;
+        line-height: 0px;
         font-size: 16px;
-        display: flex;
-        position: absolute;
-        justify-content: center;
-        top: 20%;
-        right: 0;
-        bottom: 80%;
-        left: 20%;
-        line-height: 25px;
+        margin-top: -70px;
     }
     
     .footer {
         width: 100%;
-        height: 50px;
-        text-align: center;
+        height: 30px;
         font-size: 16px;
-        text-shadow: 2px 2px 4px black;
-        color: #061731;
-        text-shadow: -2px 0 white, 0 1px white, 1px 0 white, 0 -2px white;
-        background-image: linear-gradient(to left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
-        line-height: 50px;
-    }
-    
-    i {
-        width: 30px;
-        line-height: 50px;
-    }
-    
-    .wrapper, .icon {
-        display: inline-block;
-        margin-right: 30px;
-        margin-left: 30px;
-    }
-    
-    footer i:hover {
-        background-color: white;
-        border: 1px solid white;
-        border-radius: 5px;
-        width: 30px;
-        transition: 0.7s;
+        line-height: 30px;
     }
     
     .about {
-        font-size: 12px;
-        width: 60vw;
-        margin: 10px 20px 10px 20px;
-        background-color: crimson;
-        border: 1px solid white;
-        border-radius: 20px;
-        filter: drop-shadow(0 0 0.75rem white);
-    }
-    
-    p {
-        margin: 10px;
+        font-size: 14px;
+        width: 80%;
+        margin: 10px 42px 10px 42px;
     }
     
     .contact-us {
@@ -647,159 +579,85 @@ input {
         height: 50px;
         text-align: center;
         font-size: 12px;
-        text-shadow: 2px 2px 4px black;
-        color: #061731;
-        text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
-        background-image: linear-gradient(to left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 95%);
-    }
-    
-    .contact-section p {
-        text-align: center;
     }
     
     .contact-span {
-        font-size: 12px;
-        color: #061731;
-        width: 60vw;
+        font-size: 14px;
+        width: 60%;
         margin: auto;
-        background-image: linear-gradient(to right top, #fa570c, #fa6d03, #f98000, #f79208, #f5a217, #f5af21, #f5bb2c, #f5c737, #f7d340, #f9df4a, #faea54, #fbf65f);
-        border: 2px solid white;
-        border-radius: 5px;
-        filter: drop-shadow(0 0 0.75rem white);
     }
     
     .contact-span i {
         width: 30px;
         height: 30px;
         line-height: 30px;
-        background-color: white;
-        border: 1px solid white;
-        border-radius: 50%;
-    }
-    
-    .contact-span a {
-        text-decoration: none;
-        color: white;
-        text-shadow: 2px 2px 4px black;
-    }
-    
-    .border1 {
-        width: 100vw;
-        height: 70vh;
-    }
-    
-    #game {
-        display: flex;
     }
     
     .game-div {
-        width: 80vw;
-        margin: auto;
-        padding: 10px;
-        color: #061630;
-        font-size: 24px;
-        border: 5px solid white;
-        border-radius: 5px;
-        background-image: linear-gradient(to right top, #fa570c, #fa6d03, #f98000, #f79208, #f5a217, #f5af21, #f5bb2c, #f5c737, #f7d340, #f9df4a, #faea54, #fbf65f);
-        filter: drop-shadow(0 0 0.75rem #061630);
-        text-align: center;
-    }
-    
-    hr {
-        width: 20vw;
-        border: 2px solid white;
+        width: 80%;
+        margin: 10px 42px 10px 42px;
+        padding: 1px;
+        font-size: 14px;
+        border: 1px solid white;
     }
     
     #game-zone {
         width: 100%;
-        height: 270px;
+        height: 300px;
         margin: 20px 0 20px 0;
         background-image: linear-gradient(to left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 95%);
     }
     
     .to-be {
-        height: 200px;
+        height: 150px;
         width: auto;
-        margin: 5px 490px 0px 490px;
+        margin: 5px 138px 0px 138px;
         border: 5px solid #061630;
         border-radius: 50%;
         filter: drop-shadow(0 0 0.75rem #061630);
     }
     
-    a.image-anchor:hover {
-        filter: drop-shadow(0 0 1rem white);
-    }
-    
     .ser {
-        width: 200px;
-        font-size: xx-large;
-        color: white;
-        background-color: #061630;
-        filter: drop-shadow(0 0 0.75rem #EE204F);
-        margin: 5px 500px 5px 500px;
-        padding: 5px;
-        text-decoration: none;
-        border: 1px solid white;
-        border-radius: 30px;
+        width: 150px;
+        font-size: large;
+        margin: 5px 160px 5px 160px;
     }
-    
-    a.ser:hover, #game button:hover, #strike-button:hover, #restart-button:hover, #audio-button:hover {
-        background-color: crimson;
-        filter: drop-shadow(0 0 1rem white);
-    }
-    
-    #game {
-        height: 50px;
-        display: flex;
-        justify-content: space-evenly;
-    }
-    
     #game button {
-        width: 200px;
-        font-size: xx-large;
-        color: white;
-        background-color: #061630;
-        filter: drop-shadow(0 0 0.75rem #EE204F);
-        padding: 5px;
-        text-decoration: none;
-        border: 1px solid white;
-        border-radius: 30px;
+        width: 175px;
+        font-size: large;
+        margin-top: 10px;
     }
     
-    /* display anagram list divs evenly in row */
     #list-section {
-        display: flex;
-        justify-content: space-evenly; 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; 
+        margin-left: 5px;
     }
     
     .anagram-head {
-        text-align: center;
-        font-size: x-large;
-        color: #061731;
-        text-shadow: -4px 0 white, 0 4px white, 4px 0 white, 0 -4px white;
-        background-image: linear-gradient(to left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 95%);
-        filter: drop-shadow(0 0 0.75rem white);
+        text-align: left;
+        line-height: 16px;
+        font-size: 16px;
+        width: 150px;
+        text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     }
     
     .info-logo {
-        height: 50px;
-        width: 50px;
-        margin-right: 5px;
-        margin-top: 5px;
+        width: 20px;
+        height: auto;
     }
-    
+
     .list-ser {
-        height: 180px;
-        border: 2px solid white;
-        background-image: linear-gradient(to right top, #151431, #232548, #31385f, #3f4b78, #4d6092, #4e6295, #506599, #51679c, #475789, #3d4777, #333865, #292a53);
-        filter: drop-shadow(0 0 0.75rem #EE204F);
+        height: 150px;
+        font-size: 14px;
+        width: 150px;
     }
     
     .list-estar {
-        height: 180px;
-        border: 2px solid white;
-        background-image: linear-gradient(to right top, #5a1e2d, #712134, #89253a, #a1283f, #b92b43, #bc2a3f, #bf293b, #c12837, #af212d, #9d1a23, #8b131a, #7a0c11);
-        filter: drop-shadow(0 0 0.75rem #EE204F);
+        height: 150px;
+        font-size: 14px;
+        width: 150px;
     }
     
     #playPauseIcon {
@@ -819,7 +677,7 @@ input {
         justify-self: center;
     }
     
-    #random-sentence {
+    #phrase {
         margin: auto;
         padding: 5px;
         border: 1px solid white;
