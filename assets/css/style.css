@@ -304,7 +304,7 @@ a.ser:hover, #game button:hover, #strike-button:hover, #restart-button:hover, #a
     justify-self: center;
 }
 
-#random-sentence {
+#phrase {
     margin: auto;
     padding: 5px;
     border: 1px solid white;
@@ -660,23 +660,11 @@ input {
         width: 150px;
     }
     
-    #playPauseIcon {
-        display: flex;
-    }
-    
     #audio-button {
         width: 100px;
-        font-size: x-large;
-        color: white;
-        background-color: #061630;
-        filter: drop-shadow(0 0 0.75rem #EE204F);
-        margin: auto;
-        padding: 5px;
-        border: 1px solid white;
-        border-radius: 30px;
-        justify-self: center;
+        font-size: large;
     }
-    
+
     #phrase {
         margin: auto;
         padding: 5px;
@@ -687,30 +675,22 @@ input {
     
     input {
         height: 30px;
-        width: 200px;
-        margin: auto;
-        border: 1px solid crimson; 
-        border-radius: 5px;
-        font-size: 24px;
+        width: 150px;
+        font-size: 18px;
     }
     
     #strike-button, #restart-button {
-        width: 100px;
-        font-size: x-large;
+        width: 80px;
+        font-size: large;
         color: white;
-        background-color: #061630;
-        filter: drop-shadow(0 0 0.75rem #EE204F);
         margin: auto;
-        padding: 5px;
-        border: 1px solid white;
-        border-radius: 30px;
     }
     
     .score-area {
         display: flex;
         align-items: center;
         position:relative;
-        left: 26%;
+        left: 2%;
     }
     
     .king-ser {
@@ -728,11 +708,7 @@ input {
     .score-area p {
         margin: 24px 0px 24px 0px;
         height: 24px;
-        padding: 5px;
-        text-align: center;
-        font-size: x-large;
-        text-shadow: 1px 1px 2px white;
-        color: #061731;
+        font-size: 18px;
     }
     
     .ser-points {
