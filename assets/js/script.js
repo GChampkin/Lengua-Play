@@ -68,7 +68,7 @@ function checkUserAnswer() {
     const correctAnswer = document.getElementById('phrase').dataset.correctAnswer;
     const resultDiv = document.getElementById('result');
     if (userInput === correctAnswer) {
-        resultDiv.textContent = 'muy bien';
+        resultDiv.textContent = '¡Muy bien!';
         incrementSerPoints();
     } else {
         resultDiv.textContent = `Aiiii, you answered ${userInput}, the correct answer was ${correctAnswer}!`;
@@ -88,9 +88,9 @@ function incrementEstarPoints() {
 
 function gameStatus() {
     let phraseDiv = document.getElementById('phrase');
-    if (serPoints >= 20) {
+    if (serPoints >= 200) {
         phraseDiv.textContent = "Felicidades! You won the battle!";
-    } else if (estarPoints >= 20) {
+    } else if (estarPoints >= 200) {
         phraseDiv.textContent = "Qué pena! You lost the battle! :(";
         console.log(gameLost)
     }
