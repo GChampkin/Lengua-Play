@@ -43,9 +43,20 @@ This website will be particularly useful for young learners currently in the edu
 
 ### HTML
 * When run through the official W3C Validator, an error is thrown in relation to the presence of the background element being used within the <body> tag. However after extensive research I found that doing it this way was the only way to be able to insert my own image saved on my device as a background image behind all elements. I will need to conduct further research in order to work out how to use my own image that does not have a link as a background. 
+* Other errors were thrown on all pages due to mistaken presence of a semi-colon where it is was not need nor allowed. This was easily rectified. 
+* There were no other errors thrown on the HTML files. 
 
 ### CSS
 
+* There were no errors thrown when the style.css file was passed through the official (Jigsaw) W3C Validator. 
+
+<p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
 
 ### JavaScript
 

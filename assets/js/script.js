@@ -64,6 +64,7 @@ function displayPhrase() {
 }
 
 function checkUserAnswer() {
+    document.getElementById("userInput").value = "" 
     const userInput = document.getElementById('userInput').value;
     const correctAnswer = document.getElementById('phrase').dataset.correctAnswer;
     const resultDiv = document.getElementById('result');
