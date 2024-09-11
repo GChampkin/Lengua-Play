@@ -47,7 +47,7 @@ const randomPhrases = [
         {phrase: "Mi hermano es/está triste.", correctAnswer: "está", incorrectAnswer: "es"},
         {phrase: "Por qué sois/estáis enfedados?", correctAnswer: "estáis", incorrectAnswer: "sois"},
         {phrase: "Los niños son/están emocionantes.", correctAnswer: "están", incorrectAnswer: "son"} 
-]
+];
 
 let serPoints = parseInt(document.getElementById('correct').innerText);
 let estarPoints = parseInt(document.getElementById('incorrect').innerText);
@@ -64,7 +64,7 @@ function displayPhrase() {
 }
 
 function checkUserAnswer() {
-    document.getElementById("userInput").value = "" 
+    document.getElementById("userInput").value = "" ;
     const userInput = document.getElementById('userInput').value;
     const correctAnswer = document.getElementById('phrase').dataset.correctAnswer;
     const resultDiv = document.getElementById('result');
@@ -93,7 +93,6 @@ function gameStatus() {
         phraseDiv.textContent = "Felicidades! You won the battle!";
     } else if (estarPoints >= 200) {
         phraseDiv.textContent = "Qué pena! You lost the battle! :(";
-        console.log(gameLost)
     }
 }
 
