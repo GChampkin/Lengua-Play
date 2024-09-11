@@ -431,7 +431,7 @@ input {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
     .logo1 {
         max-width: 25%;
         filter: drop-shadow(0 0 0.75rem #061630);
@@ -440,14 +440,16 @@ input {
     }
     
     nav {
-        width: 85%;
+        width: 80%;
         height: 40px;
         margin-top: -50px;
     }
     
     a.nav-anchor {
-        width: 190px;
-        font-size: x-large;
+        width: 100px;
+        height: 20px;
+        margin: 30px;
+        font-size: 20px;
     }
     
     .welcome {
